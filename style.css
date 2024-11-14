@@ -1,0 +1,26 @@
+/* Estilizando a barra verde */
+.barra-verde {
+    background-color: #4F6443;
+    height: 50px; /* Altura da barra */
+    width: 100%; /* Largura total da tela */
+}
+
+/* Estilizando o quadro de publicidade */
+.quadro-publicidade {
+    background-color: #d3d3d3; /* Cor de fundo cinza claro */
+    color: #888; /* Cor do texto em cinza */
+    width: 572px; /* Largura exata */
+    height: 109.31px; /* Altura exata */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; /* Tamanho da fonte */
+    margin: 20px auto 0; /* Margem superior para afastar da barra verde */
+}
+ /* Estilo opcional para a imagem */
+ .imagem-galeria {
+    display: block;
+    margin: 20px auto; /* Centralizar a imagem horizontalmente */
+    max-width: 100%; /* Tornar a imagem responsiva */
+    height: auto; /* Manter proporção */
+}
