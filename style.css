@@ -20,6 +20,13 @@
  /* Estilo opcional para a imagem */
  .imagem-galeria {
     display: block;
+    margin: 50px auto; /* Centralizar a imagem horizontalmente */
+    max-width: 100%; /* Tornar a imagem responsiva */
+    height: auto; /* Manter proporção */
+}
+/* Estilo opcional para imagem da plantapetro */
+.imagem-plantapetro {
+    display: block;
     margin: 20px auto; /* Centralizar a imagem horizontalmente */
     max-width: 100%; /* Tornar a imagem responsiva */
     height: auto; /* Manter proporção */
