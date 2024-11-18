@@ -23,7 +23,14 @@
     display: flex;
     justify-content: center;
     gap: 20px; /* Espaço entre as imagens */
-    margin: 20px auto;
+    margin: 40px auto 0; /* Margem superior e centraliza */
+}
+
+/* Contêiner para a imagem e o texto */
+.imagem-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Estilo para imagem altiora */
@@ -37,4 +44,44 @@
     width: 501.74px;
     height: 440.49px;
     border: 3px solid #4f2c16;
+}
+
+/* Estilo para o texto abaixo da imagem altiora */
+.texto-descricao {
+    width: 335.21px;
+    height: auto; /* Ajustar a altura automaticamente */
+    border: 0; /* Sem borda */
+    opacity: 1; /* Mantido para que o texto fique visível */
+    color: #112820; /* Alterado para uma cor escura para melhor contraste */
+    padding: 10px; /* Adiciona um pouco de espaçamento interno */
+    margin: 10px auto 0; /* Margem superior e centraliza */
+}
+
+.svg-divider{
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Responsividade com Media Queries */
+@media (max-width: 768px) {
+    .quadro-publicidade {
+        width: 95%; /* Aumenta a largura em telas menores */
+    }
+
+    .imagens-lado-a-lado {
+        flex-direction: column; /* Coloca as imagens em coluna em telas menores */
+        align-items: center; /* Centraliza as imagens */
+        gap: 20px; /* Espaço entre as imagens em coluna */
+        margin-top: 20px; /* Ajusta a margem superior */
+    }
+
+    .imagem-altiora, .imagem-plantapetro {
+        max-width: 90%; /* Limita a largura em telas menores */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .texto-descricao {
+        width: 90%; /* Ajusta a largura do texto em telas menores */
+
 }
