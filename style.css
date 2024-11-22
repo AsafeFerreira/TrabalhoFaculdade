@@ -11,11 +11,32 @@
     margin: 20px auto 0;
 }
 
+/* Estilo para o quadro de publicidade */
+.quadro-publicidade2 {
+    background-color: #d3d3d3;
+    color: #888;
+    width: 572px;
+    height: 109.31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin: 20px auto 0;
+}
+
 /* Estilo para a barra verde */
 .barra-verde {
     background-color: #4F6443;
     height: 50px;
     width: 100%;
+}
+
+/* Estilo para a barra verde */
+.barra-medio {
+    background-color: #4F6443;
+    height: 50px;
+    width: 100%;
+    margin: 30px auto 0
 }
 
 /* Contêiner para as imagens lado a lado */
@@ -33,6 +54,14 @@
     align-items: center;
 }
 
+/* Contêiner para a imagem e o texto */
+.imagem-rectangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 /* Estilo para imagem altiora */
 .imagem-altiora {
     width: 368.42px;
@@ -48,7 +77,7 @@
 
 /* Estilo para o texto abaixo da imagem altiora */
 .texto-descricao {
-    width: 335.21px;
+    width: 323px; /* Largura específica */
     height: auto; /* Ajustar a altura automaticamente */
     border: 0; /* Sem borda */
     opacity: 1; /* Mantido para que o texto fique visível */
@@ -57,10 +86,35 @@
     margin: 10px auto 0; /* Margem superior e centraliza */
 }
 
-.svg-divider{
+.svg-divider {
     margin-top: 10px;
     position: relative;
     z-index: 2;
+}
+
+/* Estilo para o botão NOSSA HISTÓRIA */
+.botao-nossa-historia {
+    width: 150px;
+    height: 30px;
+    margin-top: 20px; /* Distância de 20px do texto-descricao */
+    border-radius: 9px 9px 9px 9px;
+    border: 1px solid #112820;
+    background-color: #4F6443; /* Cor de fundo branca */
+    color: #CBBA9E; /* Cor do texto */
+    font-family: 'Averia Serif Libre', serif; /* Fonte solicitada */
+    font-size: 15px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    line-height: 18.14px; /* Altura da linha */
+    text-align: center; /* Centraliza o texto no botão */
+    text-underline-position: from-font; /* Posição do sublinhado */
+    text-decoration-skip-ink: none; /* Sublinhado sem pular por cima de partes da fonte */
+    cursor: pointer; /* Muda o cursor para "mãozinha" ao passar */
+    opacity: 1; /* Tornar visível */
+}
+
+.botao-nossa-historia:hover {
+    background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+    color: #ac0e0e; /* Cor do texto ao passar o mouse */
 }
 
 /* Responsividade com Media Queries */
@@ -83,5 +137,10 @@
 
     .texto-descricao {
         width: 90%; /* Ajusta a largura do texto em telas menores */
+    }
 
+    .botao-nossa-historia {
+        width: 90%; /* Botão com largura responsiva */
+    }
+    
 }
