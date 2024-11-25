@@ -65,10 +65,20 @@
 .imagem-direita {
     position: absolute; /* Permite posicionar em relação ao contêiner pai */
     width: 228px;
-    height: 489px;
-    top: 1000px; /* Ajusta a distância do topo da página ou do contêiner pai */
-    left: 2; /* Ajuste para mover para esquerda/direita */
-    right:
+    height: 450px;
+    top: 1010px; /* Ajusta a distância do topo da página ou do contêiner pai */
+    left: 1%; /* Ajuste para mover para esquerda/direita */
+    right:0%
+    opacity: 1; /* Define a opacidade */
+}
+
+.imagem-esquerda {
+    position: absolute; /* Permite posicionar em relação ao contêiner pai */
+    width: 228px;
+    height: 450px;
+    top: 1010px; /* Ajusta a distância do topo da página ou do contêiner pai */
+    left: 77.7%; /* Ajuste para mover para esquerda/direita */
+    right:0%
     opacity: 1; /* Define a opacidade */
 }
 
@@ -96,6 +106,28 @@
     margin: 10px auto 0; /* Margem superior e centraliza */
 }
 
+/* Estilo para o texto no meio */
+.texto-meio {
+    position: absolute; /* Permite posicionar o texto em relação ao contêiner pai */
+    width: 384px;
+    height: 130px;
+    top: 1150px; /* Ajusta a distância do topo */
+    left: 30%; /* Ajusta a distância da esquerda */
+    right: 0%;
+    opacity: 1; /* Torna visível */
+    font-family: 'Poiret One'; /* Fonte específica */
+    font-size: 15px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    line-height: 20px; /* Altura da linha */
+    text-align: center; /* Centraliza o texto */
+    text-underline-position: from-font; /* Posição do sublinhado */
+    text-decoration-skip-ink: none; /* Sublinhado contínuo */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui o padding dentro do width/height */
+    z-index: 10; /* Garante que o texto fique por cima das imagens */
+    color: #CBBA9E;
+}
+
 .svg-divider {
     position: relative;
     bottom: 5%;
@@ -112,6 +144,20 @@
     left: 0%;
     right: 1%;
     z-index: 2;
+}
+
+.svg-divider3 {
+    position: absolute; /* Permite posicionar sobre o texto */
+    top: -22%; /* Ajuste conforme necessário para posicionar acima do texto */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajuste fino para centralização */
+}
+
+.svg-divider4 {
+    position: absolute; /* Permite posicionar sobre o texto */
+    top: 90%; /* Ajuste conforme necessário para posicionar acima do texto */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajuste fino para centralização */
 }
 
 /* Estilo para o botão NOSSA HISTÓRIA */
@@ -134,7 +180,32 @@
     opacity: 1; /* Tornar visível */
 }
 
+/* Estilo para o botão JUNTE-SE A NOS */
+.botao-junte-se-a-nos {
+    width: 150px;
+    height: 30px;
+    margin-top: 15%; /* Distância de 20px do texto-descricao */
+    border-radius: 9px 9px 9px 9px;
+    border: 1px solid #112820;
+    background-color: #4F6443; /* Cor de fundo branca */
+    color: #CBBA9E; /* Cor do texto */
+    font-family: 'Averia Serif Libre'; /* Fonte solicitada */
+    font-size: 15px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    line-height: 18.14px; /* Altura da linha */
+    text-align: center; /* Centraliza o texto no botão */
+    text-underline-position: from-font; /* Posição do sublinhado */
+    text-decoration-skip-ink: none; /* Sublinhado sem pular por cima de partes da fonte */
+    cursor: pointer; /* Muda o cursor para "mãozinha" ao passar */
+    opacity: 1; /* Tornar visível */
+}
+
 .botao-nossa-historia:hover {
+    background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+    color: #ac0e0e; /* Cor do texto ao passar o mouse */
+}
+
+.botao-junte-se-a-nos:hover {
     background-color: #ffffff; /* Cor de fundo ao passar o mouse */
     color: #ac0e0e; /* Cor do texto ao passar o mouse */
 }
