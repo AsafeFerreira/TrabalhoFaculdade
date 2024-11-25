@@ -62,6 +62,16 @@
     width: 100%;
 }
 
+.imagem-direita {
+    position: absolute; /* Permite posicionar em relação ao contêiner pai */
+    width: 228px;
+    height: 489px;
+    top: 1000px; /* Ajusta a distância do topo da página ou do contêiner pai */
+    left: 2; /* Ajuste para mover para esquerda/direita */
+    right:
+    opacity: 1; /* Define a opacidade */
+}
+
 /* Estilo para imagem altiora */
 .imagem-altiora {
     width: 368.42px;
@@ -87,8 +97,20 @@
 }
 
 .svg-divider {
-    margin-top: 10px;
     position: relative;
+    bottom: 5%;
+    top: 0%;
+    left: 0%;
+    right: 1%;
+    z-index: 2;
+}
+
+.svg-divider2 {
+    position: relative;
+    bottom: 0%;
+    top: 10%;
+    left: 0%;
+    right: 1%;
     z-index: 2;
 }
 
